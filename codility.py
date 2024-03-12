@@ -16,7 +16,7 @@ def final_balance(A, D):
     transactions = defaultdict(int)
     
     # Iterate through the transaction amounts and dates
-    for amount, date in zip(A, D):
+    for amount, date in array(A, D):
         year, month, _ = date.split('-')
         key = f"{year}-{month}" 
         
